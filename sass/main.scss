@@ -1,0 +1,16 @@
+@import './utils/variables';
+@import './base/reset';
+
+@import './components/conteiner';
+@import './components/section';
+@import './components/visually-hidden';
+@import './components/current';
+
+@import './layout/header';
+@import './layout/main/hero';
+@import './layout/main/features';
+@import './layout/main/occupation';
+@import './layout/main/team';
+@import './layout/main/company';
+@import './layout/footer';
+@import './layout/backdrop';
