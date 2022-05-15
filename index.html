@@ -475,7 +475,7 @@
         <form class="services">
           <ul class="services__list list">
             <li class="services__item">
-              <label for="name">Имя</label>
+              <label class="services__label" for="name">Имя</label>
               <div class="services__field">
                 <input class="services__input" type="text" name="name" id="name" required />
                 <svg class="services__icon" width="18" height="18">
@@ -485,7 +485,7 @@
             </li>
 
             <li class="services__item">
-              <label for="tel">Телефон</label>
+              <label class="services__label" for="tel">Телефон</label>
               <div class="services__field">
                 <input class="services__input" type="tel" name="tel" id="tel" required />
                 <svg class="services__icon" width="18" height="18">
@@ -495,7 +495,7 @@
             </li>
 
             <li class="services__item">
-              <label for="mail">Почта</label>
+              <label class="services__label" for="mail">Почта</label>
               <div class="services__field">
                 <input class="services__input" type="email" name="mail" id="mail" required />
                 <svg class="services__icon" width="18" height="18">
@@ -505,8 +505,13 @@
             </li>
 
             <li class="services__item services__feedback">
-              <label for="Feedback">Комментарий</label>
-              <textarea name="Feedback" id="Feedback" placeholder="Введите текст"></textarea>
+              <label class="services__label" for="Feedback">Комментарий</label>
+              <textarea
+                class="services__textarea"
+                name="Feedback"
+                id="Feedback"
+                placeholder="Введите текст"
+              ></textarea>
             </li>
           </ul>
 

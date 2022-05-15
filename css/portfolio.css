@@ -10,6 +10,20 @@
   --title-color: #212121;
 }
 
+.address-list__tel, .address-list__mailto {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--header-list-address-color);
+  fill: currentColor;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 body {
   max-width: 1600px;
   margin-right: auto;
@@ -86,15 +100,6 @@ img {
   color: var(--header-list-address-hover-color);
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
-.header .conteiner {
-  display: flex;
-  align-items: center;
-}
-
 .logo {
   font-family: "Raleway", "sans-serif";
   font-weight: 700;
@@ -103,10 +108,16 @@ img {
   color: #2196f3;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+.header .conteiner {
+  display: flex;
+  align-items: center;
+}
 .header__logo {
   margin-right: 93px;
 }
-
 .header__studio {
   color: #000000;
 }
@@ -123,7 +134,6 @@ img {
 .menu-list__item {
   position: relative;
 }
-
 .menu-list__item:not(:last-child) {
   margin-right: 50px;
 }
@@ -138,12 +148,9 @@ img {
   color: var(--nav-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-list__link:hover,
-.menu-list__link:focus {
+.menu-list__link:hover, .menu-list__link:focus {
   color: var(--nav-hover-color);
 }
-
 .menu-list__link::after {
   content: "";
   position: absolute;
@@ -156,9 +163,7 @@ img {
   opacity: 0;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.menu-list__link:hover::after,
-.menu-list__link:focus::after {
+.menu-list__link:hover::after, .menu-list__link:focus::after {
   opacity: 1;
 }
 
@@ -171,30 +176,16 @@ img {
   margin-right: 50px;
 }
 
-.address-list__mailto,
-.address-list__tel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 0;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--header-list-address-color);
-  fill: currentColor;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.address-list__mailto:hover, .address-list__mailto:focus {
+  color: var(--header-list-address-hover-color);
+}
+
+.address-list__tel:hover, .address-list__tel:focus {
+  color: var(--header-list-address-hover-color);
 }
 
 .address-list__icon {
   margin-right: 10px;
-}
-
-.address-list__mailto:hover,
-.address-list__mailto:focus,
-.address-list__tel:hover,
-.address-list__tel:focus {
-  color: var(--header-list-address-hover-color);
 }
 
 .hero-portfolio {
@@ -218,15 +209,14 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  letter-spacing: 0.03em;
   color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
   border: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.catalog-list__btn:hover,
-.catalog-list__btn:focus {
+.catalog-list__btn:hover, .catalog-list__btn:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -237,14 +227,12 @@ img {
   flex-wrap: wrap;
 }
 
-.skills-list > .skills-list__item {
+.skills-list__item {
   background-color: #eeeeee;
 }
-
 .skills-list__item:not(:nth-last-child(-n+3)) {
   margin-bottom: 30px;
 }
-
 .skills-list__item:not(:nth-child(3n)) {
   margin-right: 30px;
 }
@@ -252,9 +240,7 @@ img {
 .skills-list__link {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.skills-list__link:hover,
-.skills-list__link:focus {
+.skills-list__link:hover, .skills-list__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -271,16 +257,16 @@ img {
   width: 100%;
   height: 100%;
   padding: 63px 24px;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
+  letter-spacing: 0.03em;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.skills-list__link:hover .skills-list__hover-text,
-.skills-list__link:focus .skills-list__hover-text {
+.skills-list__link:hover .skills-list__hover-text, .skills-list__link:focus .skills-list__hover-text {
   transform: translateY(0);
 }
 
@@ -301,8 +287,10 @@ img {
 }
 
 .skills-list__text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
+  letter-spacing: 0.03em;
   color: #757575;
 }
 
@@ -311,21 +299,17 @@ img {
   padding-bottom: 60px;
   background-color: var(--background-color);
 }
-
 .footer .conteiner {
   display: flex;
   align-items: baseline;
 }
-
 .footer__logo-address {
   margin-right: 70px;
 }
-
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
 }
-
 .footer__studio {
   color: #ffffff;
 }
@@ -339,32 +323,36 @@ img {
 }
 
 .address__maps {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
 .address__mailto,
 .address__tel {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-soc__list {
-  display: flex;
 }
 
 .footer-soc {
   margin-right: 93px;
 }
 
-.footer-soc__title,
-.footer-subscribe__title {
+.footer-soc__list {
+  display: flex;
+}
+
+.footer-soc__title {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -384,10 +372,18 @@ img {
   fill: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc__link:hover,
-.footer-soc__link:focus {
+.footer-soc__link:hover, .footer-soc__link:focus {
   background-color: #2196f3;
+}
+
+.footer-subscribe__title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
 
 .footer-subscribe__form {
@@ -420,9 +416,7 @@ img {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-subscribe__telegram:hover,
-.footer-subscribe__telegram:focus {
+.footer-subscribe__telegram:hover, .footer-subscribe__telegram:focus {
   background-color: #188ce8;
 }
 

@@ -3,14 +3,13 @@
   padding-bottom: 94px;
 }
 
-.occupation__title,
-.team__title,
-.company__title {
+.occupation__title {
   margin-bottom: 50px;
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36px, 1.17);
+  // font-weight: 700;
+  // font-size: 36px;
+  // line-height: 1.17;
   text-align: center;
 
   color: var(--title-color);
@@ -42,9 +41,10 @@
   padding-bottom: 27px;
 
   text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(700, 14px, 1.14);
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: 1.14;
   text-transform: uppercase;
 
   color: #ffffff;
