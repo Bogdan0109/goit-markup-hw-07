@@ -37,7 +37,7 @@
 
   &:hover,
   &:focus {
-    border: 1px solid #2196f3;
+    border: 1px solid $primary-color;
   }
 }
 
@@ -49,6 +49,6 @@
 
   .logo-company-list__link:hover &,
   .logo-company-list__link:focus & {
-    fill: #2196f3;
+    fill: $primary-color;
   }
 }

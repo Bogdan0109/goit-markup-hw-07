@@ -52,7 +52,7 @@
   border-radius: 50%;
 
   &:focus {
-    fill: #2196f3;
+    fill: $primary-color;
   }
 }
 
@@ -101,7 +101,7 @@
   width: 448px;
   height: 40px;
 
-  color: #2196f3;
+  color: $primary-color;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -109,7 +109,7 @@
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:focus {
-    border-color: #2196f3;
+    border-color: $primary-color;
   }
 }
 
@@ -122,7 +122,7 @@
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .services__input:focus + & {
-    fill: #2196f3;
+    fill: $primary-color;
   }
 }
 
@@ -131,7 +131,7 @@
   width: 448px;
   height: 120px;
 
-  color: #2196f3;
+  color: $primary-color;
   outline: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -151,7 +151,7 @@
   }
 
   &:focus {
-    border-color: #2196f3;
+    border-color: $primary-color;
   }
 }
 
@@ -172,14 +172,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    fill: #2196f3;
+    fill: $primary-color;
     background-image: url(../images/icon-check.svg);
     background-origin: border-box;
     border: none;
   }
 
   .services__check-input:focus + & {
-    fill: #2196f3;
+    fill: $primary-color;
   }
 }
 
@@ -202,7 +202,7 @@
 .services__check-lable a {
   display: inline-block;
 
-  color: #2196f3;
+  color: $primary-color;
 }
 
 .services__send-button {
@@ -212,7 +212,7 @@
   height: 50px;
 
   color: #ffffff;
-  background: #2196f3;
+  background: $primary-color;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
